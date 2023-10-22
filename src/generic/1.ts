@@ -5,7 +5,7 @@
 
 function getPromise<T>(): Promise<T> {
   return new Promise((resolve) => {
-    resolve(["Text", 50] as any);
+    resolve(["Text", 50] as T);
   });
 }
 
