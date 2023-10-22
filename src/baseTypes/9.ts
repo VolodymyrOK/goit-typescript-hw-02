@@ -3,12 +3,13 @@
 */
 
 type Details = { createAt: Date; updateAt: Date };
+type Status = "open" | "close";
 
 type Page = {
   title: string;
   likes: number;
   accounts: string[];
-  status: string;
+  status: Status;
   details?: Details;
 };
 
