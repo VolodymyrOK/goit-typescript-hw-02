@@ -14,7 +14,15 @@ type User = {
   password: string;
 };
 
-function createOrUpdateUser(initialValues: User) {
+// function createOrUpdateUser(initialValues: Pick<User, "email" | "password">) {
+//   // Оновлення користувача
+// }
+
+// function createOrUpdateUser(initialValues: Omit<User, "name" | "surname">) {
+//   // Оновлення користувача
+// }
+
+function createOrUpdateUser(initialValues: Partial<User>) {
   // Оновлення користувача
 }
 
